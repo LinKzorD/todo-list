@@ -41,19 +41,21 @@ function App() {
             return (
               <div key={todo.id} className='todolist'>
                 <div className='todolistele'>
-                  <div>
+                  <div className='box'>
                     <h2>{todo.text}</h2>
                   </div>
                   <div>
                     <p> {todo.date} </p>
                   </div>
-                  <button
-                    type='button'
-                    className='btn'
-                    onClick={() => dispatch({ type: "del-todo", idx })}
-                  >
-                    Done
-                  </button>
+                  <div className='box'>
+                    <button
+                      type='button'
+                      className='btn'
+                      onClick={() => dispatch({ type: "del-todo", idx })}
+                    >
+                      Done
+                    </button>
+                  </div>
                 </div>
               </div>
             );

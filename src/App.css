@@ -25,16 +25,19 @@
 .todolist {
   margin: 0 auto;
   width: 50vw;
-  display: flex;
 }
 
 .todolistele {
+  text-align: center;
+  display: flex;
+}
+.box {
   flex: 1;
 }
 
 .btn {
+  padding: 20px;
   width: 100px;
-  padding: 10px;
   background-color: #7ad9c4;
   border-radius: 15px;
   border: none;
